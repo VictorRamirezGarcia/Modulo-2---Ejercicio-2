@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+  <title>Pagina Hospital Clinico Dr. Victor Ramirez</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="nav">
+
+  <div class="nav_logo">
+    <img src="img/logitohospital.png" alt="Logotipo del Hospital" width="100" height="100" />
+  </div>
+
+  <div class="nav_title">
+    <h1 class="header__title">Bienvenidos</h1>
+  </div>
+
+      <header class="header">   
+      <nav class="header__nav">   
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="equipo.html">Equipo</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a> </li>
+          <li class="nav__item"><button class="nav__link" type="button">Reservar Cita</button></li>
+        </ul>
+      </nav>
+     </header> 
+     
+</div>
+
+<div class="main">
+  <div class="main__section">
+  <h1 class="main__title">Formulario de Contacto:</h1>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+          </li>
+          <li>
+            <label for="asunto">Asunto:</label>
+            <select name="menu">
+              <option value="0">Seleccione un asunto..</option>
+              <option value="1">Medicina General</option>
+              <option value="2">Urgencia Ambulatoria</option>
+              <option value="3">Toma de Muestras</option>
+            </select>
+          </li>
+          <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Envíe su mensaje</button>
+          </li>
+        </ul>
+      </form>
+  </div>
+
+  <div class="main__section">
+    <h1 class="main__title">Mapa Ubicacion Hospital:</h1>
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51245.07064547779!2d-72.13834542089839!3d-36.606718300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9668d7d7adad289d%3A0x6bc898701d5885c4!2sPlaza%20de%20Armas%20de%20Chill%C3%A1n!5e0!3m2!1ses!2scl!4v1729470308816!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+</div>
+
+  <div class="footer">
+    <p class="footer__title">&copy; 2024 Curso Front-End</p>
+    <ul class="footer__list">
+      <li class="footer__item"><a class="footer__link" href="/acerca-de">Acerca de</a></li>
+      <li class="footer__item"><a class="footer__link" href="/conectar">Conectar</a></li>
+      <li class="footer__item"><a class="footer__link" href="/rrss">Redes Sociales</a></li>
+    </ul> 
+</div>
+    
+</body>
+</html>
